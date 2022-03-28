@@ -21,6 +21,10 @@ p {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+a {
+    text-decoration: none;
+}
 /*style for body tag*/
 body {
     background-image: url("C:\Users\Krishant Kumar\Desktop\DGT100\backgroundtexture.png")
@@ -34,6 +38,8 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 19px 51px 0 rgba(1,1,1,1), 0 14px 19px 0 rgba(0,0,0,0.07);
 }
 
 .navbar a {
@@ -60,11 +66,11 @@ body {
     font-family: inherit;
     margin: 0;
 }
-
+/*Css code for when the mouse hovers the links and dropdown*/
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #008CBA;
 }
-
+/*This is the Css for the content in the dropdown*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -73,7 +79,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
+/* Css code for the a tags in the dropdown*/
 .dropdown-content a {
     float: none;
     color: black;
@@ -82,7 +88,7 @@ body {
     display: block;
     text-align: left;
 }
-
+/* Css code that changes the background color of the links in the dropdown when the mouse hovers over it*/
 .dropdown-content a:hover {
     background-color: #ddd;
 }
@@ -90,7 +96,7 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+/*Css code to center the images in my website*/
 .center {
     display: inline-block;
     margin-left: auto;
@@ -100,18 +106,19 @@ body {
     border: solid;
     border-color: black;
     border-width: 5px;
+    box-shadow: 0 19px 51px 0 rgba(1,1,1,1.16), 0 14px 19px 0 rgba(0,0,0,0.07);
 }
 
 /*css code for the animated images*/ 
 .container {
     position: relative;
-    width: 27%;
+    width: 27.1%;
     display: block;
     margin-left: auto;
-    margin-right: 720px;
+    margin-right: auto;
     font-family: sans-serif;
 }
-
+/*Css code for the text that fades on the animated images*/
 .overlay {
     position: absolute;
     top: 0;
@@ -127,11 +134,11 @@ body {
     margin-left: auto;
     margin-right: inherit;
 }
-
+/* css code for the overlay opacity*/
 .container:hover .overlay {
     opacity: 0.75;
 }
-
+/* Css code for the text on the overlay*/
 .text {
     color: white;
     font-size: 20px;
@@ -153,8 +160,9 @@ body {
     border: solid;
     border-color: black;
     border-width: 5px;
+    box-shadow: 0 19px 51px 0 rgba(1,1,1,1.16), 0 14px 19px 0 rgba(0,0,0,0.07);
 }
-
+/* css code for the imbedded youtube videos*/
 .imbed1 {
     display: block;
     margin-left: auto;
@@ -165,11 +173,11 @@ body {
     border-color: black;
     border-width: 5px;
 }
-
+/*css code to center align the footer*/
 .text-center {
     text-align: center;
 }
-
+/*Css code for my logo in all the pages*/
 video {
     float: left;
     margin-left: 0px;
@@ -204,6 +212,7 @@ figcaption {
   cursor: pointer;
   width: 15%;
   font-size: 18px;
+  border-radius: 5px;
 }
 
 .add-to-cart:hover {
@@ -236,4 +245,8 @@ tr {
 
 .add-to-cart-link {
     text-decoration: none;
+}
+
+.table {
+    font-weight: 10px;
 }
